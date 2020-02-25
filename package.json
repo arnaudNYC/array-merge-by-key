@@ -1,5 +1,5 @@
 {
-  "name": "array-merge-by-key",
+  "name": "forked array-merge-by-key",
   "version": "1.0.1",
   "description": "Effectively merge arrays of objects into a single array by merging objects with the same key (property).",
   "main": "index.js",
@@ -46,5 +46,8 @@
       "esm"
     ]
   },
-  "dependencies": {}
+  "dependencies": {
+    "array-merge-by-key": "^1.0.1",
+    "benchmark": "^2.1.4"
+  }
 }

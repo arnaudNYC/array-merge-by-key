@@ -16,7 +16,7 @@ module.exports = function(key, ...arrays) {
         for (let j = 0; j < arrays[i].length; ++j) {
             const element = arrays[i][j];
             if (element[key]) {
-                const keyValue = element[key];
+                const keyValue = element.hasOwnProperty(key);
                 if (groups.has(keyValue)) {
                     groups.get(keyValue)[1].push(element);
                 } else {
